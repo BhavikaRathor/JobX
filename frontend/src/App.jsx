@@ -21,8 +21,11 @@ import Register from "./pages/auth/Register";
 // import Applicants from "./pages/recruiter/Applicants";
 // import JobSeekers from "./pages/recruiter/JobSeekers";
 // import Resources from "./pages/recruiter/Resources";
-
-// Job Seeker
+   import ViewApplications from "./pages/recruiter/ViewApplications";
+   import SearchApplications from "./pages/recruiter/SearchApplications";
+   import SearchJobSeeker from "./pages/recruiter/SearchJobSeeker";
+   import RecruiterResources from "./pages/recruiter/RecruiterResources";
+   // Job Seeker
 // import Dashboard from "./pages/seeker/Dashboard";
 // import Jobs from "./pages/seeker/Jobs";
 // import Profile from "./pages/seeker/Profile";
@@ -96,7 +99,23 @@ function App() {
           element={<Resources />}
         /> */}
 
+   <Route
+  path="/recruiter/applications"
+  element={<ViewApplications />}
+/>
 
+<Route
+  path="/recruiter/search-applications"
+  element={<SearchApplications />}
+/>
+<Route
+  path="/recruiter/search-jobseeker"
+  element={<SearchJobSeeker />}
+/>
+<Route
+  path="/recruiter/resources"
+  element={<RecruiterResources />}
+/>
 
         {/* ================= JOB SEEKER ================= */}
 
